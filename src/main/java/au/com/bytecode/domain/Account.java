@@ -88,12 +88,14 @@ public class Account implements Comparable<Account> {
     @Override
     public boolean equals(Object obj) {
         
-        if (this == obj) 
+        if (this == obj) {
             return true;
+        }
         
-        if (!(obj instanceof Account)) 
+        if (!(obj instanceof Account)) {
             return false;
-        
+        }
+    
         Account other = (Account) obj;
 
         return Objects.equal(username, other.getUsername()) &&
