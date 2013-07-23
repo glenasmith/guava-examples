@@ -12,9 +12,10 @@ import static org.junit.Assert.*;
 public class StringRelatedTimeSavers {
     
     @Test
-    void livingInFearOfNullNoMore() {
+    public void livingInFearOfNullNoMore() {
         assertTrue(Strings.isNullOrEmpty(null));
-        assertTrue(Strings.isNullOrEmpty("       "));
+        assertTrue(Strings.isNullOrEmpty(""));
+        assertFalse(Strings.isNullOrEmpty("       "));
     }
     
 }
