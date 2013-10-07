@@ -14,7 +14,7 @@
     </scm>
     
     <properties>
-        <guava.version>14.0.1</guava.version>
+        <guava.version>15.0</guava.version>
         <junit.version>4.11</junit.version>
     </properties>
   
