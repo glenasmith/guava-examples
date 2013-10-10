@@ -1,6 +1,7 @@
 package au.com.bytecode.domain;
 
 import com.google.common.base.Objects;
+import static com.google.common.base.Preconditions.checkNotNull;
 import com.google.common.collect.ComparisonChain;
 import java.util.Date;
 
@@ -19,10 +20,6 @@ public class Account implements Comparable<Account> {
     private Date dateCreated;
     private Date lastLogin;
     
-    public Account() {
-        dateCreated = new Date();
-    }
-
     public Account(String username, String password, String email) {
         this.username = username;
         this.password = password;

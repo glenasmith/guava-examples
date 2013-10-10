@@ -9,7 +9,7 @@ import au.com.bytecode.domain.Account;
  * 
  * @author Glen
  */
-public class ObjectRelatedWithoutBoilerplate {
+public class ObjectsTest {
     
     @Test
     public void aMuchNicerToString() {

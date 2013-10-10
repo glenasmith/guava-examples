@@ -14,7 +14,7 @@ import static org.junit.Assert.*;
  * 
  * @author Glen
  */
-public class StringRelatedTimeSavers {
+public class StringsTest {
     
     @Test
     public void livingInFearOfNullNoMore() {
