@@ -52,26 +52,23 @@ public class CollectionsTest {
     @Test
     public void buildingImmutableMaps() {
 
-        ImmutableMap<Integer, String> postcodes = new ImmutableMap.Builder<Integer,String>()
+        ImmutableMap<Integer, String> postcodes = new ImmutableMap.Builder<Integer, String>()
                 .put(2600, "Tony")
                 .put(2615, "Glen")
                 .build();
         assertEquals("Tony", postcodes.get(2600));
 
     }
-    
+
     @Test
     public void setOperations() {
         Set<String> first = Sets.newHashSet("a", "b", "c");
         Set<String> second = Sets.newHashSet("c", "d", "e");
-        
-        assertEquals(ImmutableSet.of("a", "b"), Sets.difference(first, second)); 
-        assertEquals(ImmutableSet.of("a", "b", "d", "e"), Sets.symmetricDifference(first, second)); 
-        assertEquals(ImmutableSet.of("c"), Sets.intersection(first, second)); 
-        assertEquals(ImmutableSet.of("a", "b", "c", "d", "e"), Sets.union(first, second)); 
+
+        assertEquals(ImmutableSet.of("a", "b"), Sets.difference(first, second));
+        assertEquals(ImmutableSet.of("a", "b", "d", "e"), Sets.symmetricDifference(first, second));
+        assertEquals(ImmutableSet.of("c"), Sets.intersection(first, second));
+        assertEquals(ImmutableSet.of("a", "b", "c", "d", "e"), Sets.union(first, second));
     }
-    
-   
-    
 
 }
