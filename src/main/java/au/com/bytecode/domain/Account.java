@@ -104,7 +104,7 @@ public class Account implements Comparable<Account> {
     
         return ComparisonChain.start()
                 .compare(username, o.username)
-                .compare(email, o.email)
+                .compare(email, o.email)              
                 .result();
         
     }
