@@ -1,9 +1,13 @@
 package au.com.bytecode.guava;
 
+import au.com.bytecode.domain.Account;
+import com.google.common.collect.ComparisonChain;
+import com.google.common.collect.ImmutableList;
 import com.google.common.collect.ImmutableMap;
 import com.google.common.collect.ImmutableSet;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
+import com.google.common.collect.Ordering;
 import com.google.common.collect.Sets;
 import java.util.List;
 import java.util.Map;
@@ -68,6 +72,32 @@ public class CollectionsTest {
         assertEquals(ImmutableSet.of("a", "b", "d", "e"), Sets.symmetricDifference(first, second));
         assertEquals(ImmutableSet.of("c"), Sets.intersection(first, second));
         assertEquals(ImmutableSet.of("a", "b", "c", "d", "e"), Sets.union(first, second));
+    }
+    
+    @Test
+    public void orderingCollections() {
+        List<Account> accounts = ImmutableList.of(
+                new Account("glen", "pw", "glen@glensmith.com.au"),
+                new Account("glen", "pw", "glen@bytecode.com.au"),
+                new Account("kylie", "pw", "kylie@bytecode.com.au")
+                
+        );
+        Ordering<Account> byNameThenEmail = new Ordering<Account>() {
+
+            @Override
+            public int compare(Account left, Account right) {
+                return ComparisonChain.start().
+                        compare(left.getUsername(), right.getUsername()).
+                        compare(left.getEmail(), right.getEmail()).
+                        result();
+            }
+            
+        };
+        assertFalse(byNameThenEmail.isOrdered(accounts));
+        assertEquals("glen@bytecode.com.au", 
+                byNameThenEmail.sortedCopy(accounts).get(0).getEmail());
+        assertEquals("kylie", byNameThenEmail.reverse().min(accounts).getUsername());
+        
     }
 
 }
