@@ -11,7 +11,7 @@ import java.util.SortedSet;
 /**
  * Basic work around Common object-related operations.
  *
- * @author Glen
+ * @author Glen Smith (glen@bytecode.com.au)
  */
 public class ObjectsTest {
 

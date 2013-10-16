@@ -1,6 +1,5 @@
 package au.com.bytecode.guava;
 
-import com.google.common.base.CharMatcher;
 import com.google.common.base.Optional;
 import static com.google.common.base.Preconditions.*;
 import com.google.common.base.Throwables;
@@ -8,9 +7,9 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 /**
- * Guava testing examples.
+ * Basic exception utilities.
  * 
- * @author Glen
+ * @author Glen Smith (glen@bytecode.com.au)
  */
 public class ExceptionsTest {
     

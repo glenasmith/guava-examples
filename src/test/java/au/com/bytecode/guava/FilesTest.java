@@ -13,9 +13,9 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 /**
- * Guava testing examples.
+ * Reading, writing, copying, renaming, touching files.
  *
- * @author Glen
+ * @author Glen Smith (glen@bytecode.com.au)
  */
 public class FilesTest {
 

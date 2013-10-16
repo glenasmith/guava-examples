@@ -11,9 +11,9 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 /**
- * Guava testing examples.
+ * Working with in-memory caching.
  *
- * @author Glen
+ * @author Glen Smith (glen@bytecode.com.au)
  */
 public class CachingTest {
 

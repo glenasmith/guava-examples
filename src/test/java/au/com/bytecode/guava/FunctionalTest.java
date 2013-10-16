@@ -16,9 +16,9 @@ import static org.junit.Assert.*;
 import org.junit.Before;
 
 /**
- * Guava testing examples.
+ * Filtering and transforming collections with a functional style.
  *
- * @author Glen
+ * @author Glen Smith (glen@bytecode.com.au)
  */
 public class FunctionalTest {
 

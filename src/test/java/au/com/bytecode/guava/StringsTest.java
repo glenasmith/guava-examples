@@ -16,7 +16,7 @@ import static org.junit.Assert.*;
 /**
  * Basic work around String operations.
  *
- * @author Glen
+ * @author Glen Smith (glen@bytecode.com.au)
  */
 public class StringsTest {
 

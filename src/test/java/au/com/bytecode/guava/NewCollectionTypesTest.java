@@ -14,9 +14,9 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 /**
- * Guava testing examples.
+ * Some of the new collection types and data structures that are in Guava.
  *
- * @author Glen
+ * @author Glen Smith (glen@bytecode.com.au)
  */
 public class NewCollectionTypesTest {
 

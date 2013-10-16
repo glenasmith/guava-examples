@@ -4,7 +4,6 @@ import com.google.common.collect.ImmutableMap;
 import com.google.common.collect.ImmutableSet;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
-import com.google.common.collect.Ordering;
 import com.google.common.collect.Sets;
 import java.util.List;
 import java.util.Map;
@@ -13,9 +12,9 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 /**
- * Guava testing examples.
+ * Making basic collections easier to work with.
  *
- * @author Glen
+ * @author Glen Smith (glen@bytecode.com.au)
  */
 public class CollectionsTest {
 
